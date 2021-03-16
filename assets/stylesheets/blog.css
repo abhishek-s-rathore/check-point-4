@@ -7,3 +7,78 @@
 @import url(../stylesheets/common.css);
 
 /*Custom Styles*/
+
+/*Secondary Header*/
+.secondary-header {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: rgb(230, 227, 227);
+}
+
+.secondary-header nav a {
+  color: var(--darktext);
+}
+
+.secondary-header nav a:hover {
+  color: var(--primary);
+}
+
+.secondary-header nav .pri-clr {
+  color: var(--primary);
+}
+
+/*Blog*/
+.blog article {
+  margin-bottom: 2rem;
+}
+
+.blog article .space {
+  padding: 1rem;
+}
+
+.blog .btn {
+  margin: 1rem auto;
+}
+
+.shift-right {
+  text-align: right;
+}
+
+.blog-info {
+  margin: 1rem auto;
+  color: var(--lighttext);
+}
+
+.blog-info i {
+  margin: 0 0.5rem;
+}
+
+.pages {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages .box {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem 0.3rem;
+  color: var(--lighttext);
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages .active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.pages .box:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
