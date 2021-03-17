@@ -251,6 +251,16 @@ h6 {
   display: inline-block;
 }
 
+.brand,
+.bars {
+  position: relative;
+}
+
+label,
+#toggle {
+  display: none;
+}
+
 /*Header Hover Effect*/
 
 .header-nav a:hover {
@@ -264,6 +274,7 @@ h6 {
 /*Footer*/
 .footer-top {
   background-color: var(--secondary);
+  padding: 1rem 2rem;
 }
 
 .footer-top .container {
@@ -366,4 +377,156 @@ h6 {
 
 .footer-nav a:hover {
   background-color: rgba(234, 84, 51, 0.85);
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 12px;
+  }
+
+  .main {
+    margin-top: 4.5rem;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  /*Nav*/
+  .header-nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 10rem;
+    z-index: 99;
+  }
+
+  .header-nav a {
+    color: rgb(194, 194, 194);
+  }
+
+  .brand,
+  .bars {
+    position: fixed;
+    top: 1.5rem;
+    z-index: 100;
+  }
+
+  .header .brand,
+  .header .bars {
+    color: rgb(234, 84, 51);
+  }
+
+  .brand {
+    left: 1.5rem;
+  }
+
+  .bars {
+    right: 1.5rem;
+  }
+
+  .header-nav .sm-column li {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  #toggle:checked ~ .header-nav {
+    display: inline-block;
+  }
+
+  .bars {
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .sm-column {
+    flex-direction: column;
+  }
+
+  .dropdown {
+    width: 15rem;
+    padding: 0 1.5rem;
+  }
+  .dropdown a {
+    font-size: 1rem;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .flex-20,
+  .flex-25,
+  .flex-30,
+  .flex-32,
+  .flex-40,
+  .flex-50 {
+    flex: 0 1 47%;
+    margin-bottom: 2rem;
+  }
+
+  .flex-full {
+    flex: 0 1 100%;
+    margin-bottom: 2rem;
+  }
+
+  .features .flex-full {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .flex-20,
+  .flex-25,
+  .flex-30,
+  .flex-32,
+  .flex-40,
+  .flex-47,
+  .flex-50,
+  .flex-60 {
+    flex: 0 1 100%;
+    margin-bottom: 2rem;
+  }
+
+  .flex-cntr {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mar {
+    margin: 1.1rem auto;
+  }
 }

@@ -105,7 +105,7 @@
 
 /*About Section*/
 
-.about .container {
+.about {
   background-color: var(--secondary);
 }
 
@@ -131,7 +131,7 @@
 }
 
 .circle {
-  width: 5rem;
+  width: 7rem;
   height: 5rem;
   color: var(--primary);
   border-radius: 50%;
@@ -387,7 +387,7 @@ blockquote::after {
 }
 
 .card-info {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
   position: absolute;
   left: 1rem;
@@ -433,7 +433,7 @@ blockquote::after {
   position: absolute;
   left: 0;
   right: 0;
-  top: 14.5rem;
+  bottom: 3.6rem;
   display: none;
 }
 
