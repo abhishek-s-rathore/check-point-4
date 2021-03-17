@@ -130,8 +130,33 @@
   margin-left: 1rem;
 }
 
+.video {
+  position: relative;
+}
+
+.play {
+  box-sizing: content-box;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--primary);
+  border: 12px solid rgba(225, 225, 225, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play i {
+  font-size: 2rem;
+  color: #fff;
+}
+
 .circle {
-  width: 7rem;
+  min-width: 5rem;
   height: 5rem;
   color: var(--primary);
   border-radius: 50%;
@@ -246,6 +271,10 @@
   background-color: #fff;
   color: var(--primary);
   border: 2px solid var(--primary);
+}
+
+.service .logo:hover ~ h5 {
+  color: var(--primary);
 }
 
 /*Value Section*/
@@ -516,11 +545,23 @@ big span {
 
 .contact-box h6 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .contact-box {
   text-align: center;
+}
+
+.contact-box address,
+.contact-box a {
+  color: var(--darktext);
+}
+.contact-box address {
+  margin-left: 4rem;
+}
+
+.contact-box a {
+  margin-left: -4rem;
 }
 
 .contact-box h6 span {
@@ -532,7 +573,8 @@ big span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .contact-box h6 i {

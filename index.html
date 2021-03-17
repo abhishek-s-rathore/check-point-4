@@ -47,7 +47,15 @@
               <ul class="dropdown">
                 <li>Dropdown 1</li>
                 <li>Dropdown 2</li>
-                <li>Dropdown 3</li>
+                <li class="sub-dd-list"><div>Dropdown 3
+                  <ul class="sub-dropdown">
+                    <li>Sub 1</li>
+                    <li>Sub 2</li>
+                    <li>Sub 3</li>
+                    <li>Sub 4</li>
+                    <i class="fas fa-caret-left"></i>
+                  </ul>
+                </div></li>
                 <li>Dropdown 4</li>
                 <li>Dropdown 5</li>
                 <i class="fas fa-caret-up"></i>
@@ -124,14 +132,17 @@
       </section>
 
       <!--About Section-->
+
       <section class="about padding">
         <div class="container flex">
-          <div class="flex-40 flex-full">
+          <div class="flex-40 video flex-full">
             <img
               class="full-width"
               src="assets/media/about-img.jpg"
               alt="Image Here"
             />
+
+            <div class="play"><i class="fas fa-play"></i></div>
           </div>
 
           <article class="flex-60 flex-full">
@@ -748,7 +759,7 @@
       </section>
 
       <!--Pricing Section-->
-      <section class="pricing">
+      <section class="pricing padding">
         <div class="container">
           <header class="sub-header">
             <h4>Pricing</h4>
@@ -761,11 +772,11 @@
           </header>
         </div>
         <div class="container flex">
-          <div class="plans flex-20">
+          <div class="plans shadow flex-20">
             <div class="upper flex">
               <span>Free</span>
             </div>
-            <div class="middle shadow flex-column">
+            <div class="middle flex-column">
               <big><span>$0</span>/month</big>
               <ul>
                 <li>Adla dere</li>
@@ -780,11 +791,11 @@
             </div>
           </div>
 
-          <div class="plans flex-20">
+          <div class="plans shadow flex-20">
             <div class="upper flex">
               <span>Business</span>
             </div>
-            <div class="middle shadow flex-column">
+            <div class="middle flex-column">
               <big><span>$19</span>/month</big>
               <ul>
                 <li>Adla dere</li>
@@ -799,11 +810,11 @@
             </div>
           </div>
 
-          <div class="plans flex-20">
+          <div class="plans shadow flex-20">
             <div class="upper flex">
               <span>Developer</span>
             </div>
-            <div class="middle shadow flex-column">
+            <div class="middle flex-column">
               <big><span>$29</span>/month</big>
               <ul>
                 <li>Adla dere</li>
@@ -818,11 +829,11 @@
             </div>
           </div>
 
-          <div class="plans flex-20">
+          <div class="plans shadow flex-20">
             <div class="upper flex">
               <span>Ultimate</span>
             </div>
-            <div class="middle shadow flex-column">
+            <div class="middle flex-column">
               <big><span>$49</span>/month</big>
               <ul>
                 <li>Adla dere</li>
@@ -852,8 +863,9 @@
             </p>
           </header>
           <div class="container">
+
             <div class="query">
-              <div class="flex active-query">
+              <div class="flex active-query flex-initial">
                 <p>
                   <i class="far fa-question-circle"></i> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit?
@@ -869,8 +881,9 @@
                 </p>
               </div>
             </div>
+
             <div class="query">
-              <div class="flex">
+              <div class="flex flex-initial">
                 <p>
                   <i class="far fa-question-circle"></i> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit?
@@ -879,7 +892,7 @@
               </div>
             </div>
             <div class="query">
-              <div class="flex">
+              <div class="flex flex-initial">
                 <p>
                   <i class="far fa-question-circle"></i> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit?
@@ -888,7 +901,7 @@
               </div>
             </div>
             <div class="query">
-              <div class="flex">
+              <div class="flex flex-initial">
                 <p>
                   <i class="far fa-question-circle"></i> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit?
@@ -897,7 +910,7 @@
               </div>
             </div>
             <div class="query">
-              <div class="flex">
+              <div class="flex flex-initial">
                 <p>
                   <i class="far fa-question-circle"></i> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit?
@@ -922,12 +935,14 @@
           </p>
         </header>
     </div>
+
         <div class="container flex">
+
           <div class="flex-32 shadow contact-box">
             <h6>
               <span><i class="fas fa-map-marker-alt"></i></span>Our Address
             </h6>
-            <address>A108 Adam Street, New York, NY58345</address>
+            <address>A108, Adam Street, New York,NY58345</address>
           </div>
           <div class="flex-32 shadow contact-box">
             <h6>
